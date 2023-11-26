@@ -9,10 +9,15 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking part in the survey.</p>
-    <form id="survey-form">
-      <label><input id="name" type="text" required /></label>
-    </form>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking part in the survey.</p>
+      </header>
+      <form id="survey-form">
+        <label for="name"><input id="name" type="text" required /></label>
+        <label for="email"><input id="email" type="email" /></label>
+      </form>
+    </div>
   </body>
 </html>
