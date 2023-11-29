@@ -12,16 +12,15 @@
   <body>
     <div class="container">
       <header>
-        <h1 id="title" class="text-center">Player registration</h1>
-        <p id="description" class="description text-center">
+        <h1 class="text-center">Player registration</h1>
+        <p class="description text-center">
           Please fill in the registration details.
         </p>
       </header>
-      <form id="survey-form">
+      <form>
         <div class="form-group">
           <label id="firstname-label" for="firstname">First name:</label>
           <input
-            id="firstname"
             class="form-control"
             type="text"
             name="firstname"
@@ -30,9 +29,8 @@
           />
         </div>
         <div class="form-group">
-          <label id="lastname-label" for="lastname">Last name:</label>
+          <label for="lastname">Last name:</label>
           <input
-            id="lastname"
             class="form-control"
             type="text"
             name="lastname"
@@ -41,9 +39,8 @@
           />
         </div>
         <div class="form-group">
-          <label id="email-label" for="email">Email:</label
+          <label for="email">Email:</label
           ><input
-            id="email"
             class="form-control"
             type="email"
             name="email"
@@ -52,9 +49,8 @@
           />
         </div>
         <div class="form-group">
-          <label id="number-label" for="number">Telephone number:</label
+          <label for="number">Telephone number:</label
           ><input
-            id="number"
             type="tel"
             name="number"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -64,13 +60,14 @@
           />
         </div>
         <div class="form-group">
-          <label for="personal-account"
-            >Preferred foot:<input
-              id="personal-account"
+          <p>Preferred foot:</p>
+          <label for="preferred-foot"
+            ><input
+              class="input-radio"
               type="radio"
-              name="account-type"
+              name="preferred-foot"
               class="inline"
-              value="Personal"
+              value="right"
               checked
             />
             Right</label
