@@ -139,6 +139,11 @@ textarea {
   color: #e4e4e4;
 }
 
+.container-checkbox {
+  overflow: auto;
+  height: 10rem;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
