@@ -7,50 +7,62 @@
     <meta name="keywords" content="Player registration" />
     <meta name="author" content="Igor Kaczorek" />
     <title>Player registration</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1 id="title">Player registration</h1>
-        <p id="description">Please fill in the registration details.</p>
+        <h1 id="title" class="text-center">Player registration</h1>
+        <p id="description" class="description text-center">
+          Please fill in the registration details.
+        </p>
       </header>
       <form id="survey-form">
-        <label id="name-label" for="name"
-          >Name:<input
-            id="name"
+        <div class="form-group">
+          <label id="firstname-label" for="firstname">First name:</label>
+          <input
+            id="firstname"
+            class="form-control"
             type="text"
-            name="name"
+            name="firstname"
+            placeholder="Enter your first name"
             required
-            placeholder="Enter your name"
-        /></label>
-        <label id="email-label" for="email"
-          >Email:<input
+          />
+        </div>
+        <div class="form-group">
+          <label id="lastname-label" for="lastname">Last name:</label>
+          <input
+            id="lastname"
+            class="form-control"
+            type="text"
+            name="lastname"
+            placeholder="Enter your last name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label
+          ><input
             id="email"
+            class="form-control"
             type="email"
             name="email"
-            checked
-            required
             placeholder="Enter your Email"
-        /></label>
-        <label id="number-label" for="number"
-          >Telephone number:<input
-            id="number"
-            type="number"
-            name="number"
-            checked
-            min="9"
-            max="9"
-            placeholder="Enter your telephone number"
-        /></label>
-        <label for="dropdown">
-          <select id="dropdown" name="dropdown">
-            <option></option>
-            <option></option>
-          </select>
-        </label>
+            required
+          />
+        </div>
+        <label id="number-label" for="number">Telephone number:</label
+        ><input
+          id="number"
+          type="tel"
+          name="number"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          min="9"
+          max="9"
+          placeholder="123-456-789"
+        />
         <label for="personal-account"
-          ><input
+          >Preferred foot:<input
             id="personal-account"
             type="radio"
             name="account-type"
@@ -58,7 +70,7 @@
             value="Personal"
             checked
           />
-          Personal</label
+          Right</label
         >
         <label for="business-account"
           ><input
@@ -68,8 +80,14 @@
             class="inline"
             value="Business"
           />
-          Business</label
+          Left</label
         >
+        <label for="dropdown">
+          <select id="dropdown" name="dropdown">
+            <option></option>
+            <option></option>
+          </select>
+        </label>
 
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
         <label for="vehicle1"> I have a bike</label><br />
