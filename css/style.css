@@ -133,6 +133,9 @@ textarea {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.clue {
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
