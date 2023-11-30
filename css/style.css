@@ -144,6 +144,13 @@ textarea {
   height: 10rem;
 }
 
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
