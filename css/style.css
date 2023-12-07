@@ -138,8 +138,8 @@ label {
 }
 
 .container-checkbox {
-  overflow: auto;
-  height: 10rem;
+  height: 12rem;
+  column-count: 2;
 }
 
 .input-textarea {
